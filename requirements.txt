@@ -1,0 +1,26 @@
+# ============================================================
+# ElevateBox Voice Agent — Python Dependencies
+# ============================================================
+# Pinned to minor versions for reproducible builds.
+# Patch versions float intentionally to pick up security fixes.
+
+# Web framework
+fastapi>=0.111,<0.112
+uvicorn[standard]>=0.30,<0.31
+
+# HTTP client (async, used for Vapi API calls)
+httpx>=0.27,<0.28
+
+# WhatsApp / SMS
+twilio>=9.2,<10.0
+
+# Job scheduler (callback booking)
+APScheduler>=3.10,<4.0
+
+# Timezone support (stdlib in Python 3.9+ but explicit is better)
+# zoneinfo is part of stdlib — no install needed
+
+# ============================================================
+# Dev / test dependencies (not installed in production)
+# ============================================================
+# Install with: pip install -r requirements-dev.txt

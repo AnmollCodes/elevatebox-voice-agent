@@ -1,0 +1,18 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+addopts = "-v --tb=short"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP"]
+ignore = [
+    "E501",   # line too long — handled by formatter
+    "N803",   # argument name lowercase — we use short names in some lambdas
+]
+
+[tool.bandit]
+skips = ["B101"]   # assert usage is fine in tests
