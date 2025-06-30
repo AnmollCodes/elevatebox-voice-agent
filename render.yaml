@@ -1,0 +1,19 @@
+# ============================================================
+# render.yaml — Render.com deployment configuration
+# Free tier: 750 compute hours / month, sufficient for this project.
+# ============================================================
+
+services:
+  - type: web
+    name: elevate-voice-agent
+    runtime: python
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
+    startCommand: uvicorn src.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.9"
+      - key: ENVIRONMENT
+        value: production
+      # All other env vars are set via Render Dashboard > Environment
+      # Never put secrets in this file.
