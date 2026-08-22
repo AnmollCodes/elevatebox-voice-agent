@@ -511,5 +511,3 @@ elevate-voice-agent/
 | **Total** | **100** | |
 
 ---
-
-Built for the ElevateBox SDE Intern assignment · ElevateScale Technologies Pvt. Ltd. · Banjara Hills, Hyderabad
