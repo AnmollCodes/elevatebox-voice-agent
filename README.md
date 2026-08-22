@@ -279,6 +279,16 @@ Test breakdown:
 
 ---
 
+## ⚡ Live Demo
+
+**[→ Open Interactive Demo](https://claude.ai/code/artifact/1fe346d3-9d65-40f6-8ced-bdffff7685cf)**
+
+> Try the full pipeline live — paste any sales transcript and see HOT/WARM/COLD classification, sentiment trajectory arc, objection detection, call quality score, and WhatsApp rebuttal generated in real time. No API keys needed.
+
+[![Demo](https://img.shields.io/badge/Live%20Demo-ElevateBox-6366f1?style=for-the-badge&logo=lightning&logoColor=white)](https://claude.ai/code/artifact/1fe346d3-9d65-40f6-8ced-bdffff7685cf)
+
+---
+
 ## Deployment (Render.com — free tier)
 
 1. Fork this repo
